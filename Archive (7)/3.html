@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tag for character encoding and viewport settings for responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to external CSS file for styling the page -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Title of the webpage that will appear on the browser tab -->
+    <title>Mercedes-Benz 300SL Gullwing</title>
+</head>
+<body>
+
+    <!-- Navigation bar for the website -->
+    <nav>
+        <div class="navbar">
+            <!-- Icon for opening the sidebar menu on mobile -->
+            <i class='bx bx-menu' id="menu-open"></i>
+
+            <!-- Logo of the store linking to the homepage -->
+            <div class="logo"><a href="main.html">Vintage Store</a></div>
+
+            <!-- Sidebar menu containing the navigation links -->
+            <div class="nav-links" id="nav-links">
+                <!-- Sidebar logo and close button -->
+                <div class="sidebar-logo">
+                    <span class="logo-name">Vintage Store</span>
+                    <i class='bx bx-x' id="menu-close"></i>
+                </div>
+
+                <!-- List of navigation links -->
+                <ul class="links">
+                    <li><a href="main.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="shop.html">SHOP</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Spacer elements for layout and spacing -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- Header section with the title of the car (Mercedes-Benz 300SL Gullwing) -->
+    <header>
+        <h1 class="classic-gallery-title">Mercedes-Benz 300SL Gullwing</h1>
+    </header>
+
+    <!-- Main content section of the page -->
+    <main>
+        <!-- Gallery section with images of the Mercedes-Benz 300SL Gullwing -->
+        <section class="classic-gallery-container">
+            <!-- Displaying images of the car in a gallery format -->
+            <img src="image/33.webp" alt="Classic Car 1" class="classic-gallery-image classic-image-one">
+            <img src="image/333.jpg" alt="Classic Car 2" class="classic-gallery-image classic-image-two">
+            <img src="image/3333.jpg" alt="Classic Car 3" class="classic-gallery-image classic-image-three">
+        </section>
+
+        <!-- Description section providing information about the Mercedes-Benz 300SL Gullwing -->
+        <section class="classic-description-section">
+            <p class="classic-description-text">
+                <!-- Detailed description of the Mercedes-Benz 300SL Gullwing -->
+                The Mercedes-Benz 300 SL (chassis code W 198) is a two-seat sports car that was produced by Mercedes-Benz from 1954 to 1957 as a gullwinged coupé and from 1957 to 1963 as a roadster. The 300 SL traces its origins to the company's 1952 racing car, the W194, and was equipped with a mechanical direct fuel injection system that significantly increased the power output of its three-liter overhead camshaft straight-six engine.
+
+                The 300 SL was capable of reaching speeds of up to 260 km/h (162 mph), earning it a reputation as a sports car racing champion and making it the fastest production car of its time. The car's iconic gullwing doors and innovative lightweight tubular-frame construction contributed to its status as a groundbreaking and highly influential automobile.
+
+                The designation "SL" is an abbreviation of the German term super-leicht, meaning "super-light", a reference to the car's racing-bred lightweight construction. The 300 SL was introduced to the American market at the suggestion of Max Hoffman, Maximilian Hoffman, Mercedes-Benz's United States importer at the time, who recognized the potential demand for a high-performance sports car among American buyers. The Mercedes-Benz 300 SL remains a highly sought-after classic car and is celebrated for its performance, design, and technological advancements.
+            </p>
+        </section>
+    </main>
+
+    <!-- Footer section of the page -->
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Footer heading with store name -->
+            <h1>The Vintage Store</h1>
+        </div>
+    </footer>
+
+    <!-- JavaScript for controlling the sidebar menu open and close actions -->
+    <script>
+        // Get the elements for the navigation links and menu buttons
+        const navLinks = document.getElementById("nav-links");
+        const menuOpen = document.getElementById("menu-open");
+        const menuClose = document.getElementById("menu-close");
+
+        // Event listener to open the sidebar menu when the menu icon is clicked
+        menuOpen.addEventListener("click", () => {
+            navLinks.classList.add("mobile"); // Adds the 'mobile' class to show the sidebar menu
+        });
+
+        // Event listener to close the sidebar menu when the close icon is clicked
+        menuClose.addEventListener("click", () => {
+            navLinks.classList.remove("mobile"); // Removes the 'mobile' class to hide the sidebar menu
+        });
+    </script>
+
+</body>
+</html>

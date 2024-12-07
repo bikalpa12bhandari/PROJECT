@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tag for character set and viewport settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Link to external CSS file for styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Title of the page displayed in browser tab -->
+    <title>Shelby Cobra</title>
+</head>
+<body>
+    <!-- Navigation bar with logo, links, and menu icon -->
+    <nav>
+        <div class="navbar">
+            <!-- Menu icon to open sidebar on small screens -->
+            <i class='bx bx-menu' id="menu-open"></i>
+            
+            <!-- Logo of the website linking to the main page -->
+            <div class="logo"><a href="main.html">Vintage Store</a></div>
+            
+            <!-- Sidebar menu links that appear when the menu icon is clicked -->
+            <div class="nav-links" id="nav-links">
+                <!-- Sidebar logo and close icon -->
+                <div class="sidebar-logo">
+                    <span class="logo-name">Vintage Store</span>
+                    <i class='bx bx-x' id="menu-close"></i>
+                </div>
+                <!-- Navigation links in the sidebar -->
+                <ul class="links">
+                    <li><a href="main.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="shop.html">SHOP</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Blank space for spacing before the header -->
+    <br><br><br><br><br>
+
+    <!-- Header section with the title of the product (Shelby Cobra) -->
+    <header>
+        <h1 class="classic-gallery-title">Shelby Cobra</h1>
+    </header>
+
+    <!-- Main content section for images and description -->
+    <main>
+        <!-- Gallery section with images of the Shelby Cobra -->
+        <section class="classic-gallery-container">
+            <!-- Image 1 of the car -->
+            <img src="image/222.jpg" alt="Classic Car 1" class="classic-gallery-image classic-image-one">
+            <!-- Image 2 of the car -->
+            <img src="image/22.jpg" alt="Classic Car 2" class="classic-gallery-image classic-image-two">
+            <!-- Image 3 of the car -->
+            <img src="image/2222.jpg" alt="Classic Car 3" class="classic-gallery-image classic-image-three">
+        </section>
+
+        <!-- Description section with text about the Shelby Cobra -->
+        <section class="classic-description-section">
+            <p class="classic-description-text">
+                AC had already made most of the modifications needed for the small-block V8 when they installed the 2.6-litre (159 cu in) inline-6 Ford Zephyr engine, including the extensive rework of the AC Ace's front end bodywork. The only modification of the front end of the first Cobra from that of the "AC Ace 2.6" was the steering box, which had to be moved outward to clear the wider V8 engine.
+
+                The most important modification was the fitting of a stronger rear differential to handle the increased engine power. A Salisbury 4HU unit with inboard disc brakes to reduce unsprung weight was chosen instead of the old E.N.V. unit. It was the same unit used on the Jaguar E-Type. After testing and modification, the engine and transmission were removed and the chassis was air-freighted to Shelby in Los Angeles on 2 February 1962, By this time the small-block's displacement was increased to 4.7 L (289 cu in).
+            </p>
+        </section>
+    </main>
+
+    <!-- Footer section with store name -->
+    <footer class="footer">
+        <div class="footer-content">
+            <h1>The Vintage Store</h1>
+        </div>
+    </footer>
+
+    <!-- JavaScript for opening and closing the sidebar menu -->
+    <script>
+        // Get references to sidebar elements
+        const navLinks = document.getElementById("nav-links");
+        const menuOpen = document.getElementById("menu-open");
+        const menuClose = document.getElementById("menu-close");
+
+        // Event listener to open the sidebar when the menu icon is clicked
+        menuOpen.addEventListener("click", () => {
+            navLinks.classList.add("mobile");
+        });
+
+        // Event listener to close the sidebar when the close icon is clicked
+        menuClose.addEventListener("click", () => {
+            navLinks.classList.remove("mobile");
+        });
+    </script>
+</body>
+</html>

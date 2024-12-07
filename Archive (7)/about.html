@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags to ensure proper character encoding and responsiveness across devices -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to the external CSS stylesheet for styling the page -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Title of the webpage (what appears on the browser tab) -->
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Navigation bar with a mobile-friendly sidebar -->
+    <nav>
+        <div class="navbar">
+            <!-- Icon for opening the mobile sidebar menu -->
+            <i class='bx bx-menu' id="menu-open"></i>
+
+            <!-- Logo for the store, which links to the homepage -->
+            <div class="logo"><a href="main.html">Vintage Store</a></div>
+
+            <!-- Sidebar menu with navigation links -->
+            <div class="nav-links" id="nav-links">
+                <!-- Sidebar logo and close button -->
+                <div class="sidebar-logo">
+                    <span class="logo-name">Vintage Store</span>
+                    <i class='bx bx-x' id="menu-close"></i> <!-- Icon to close the sidebar -->
+                </div>
+
+                <!-- List of links in the sidebar navigation menu -->
+                <ul class="links">
+                    <li><a href="main.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="shop.html">SHOP</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Spacer to create some vertical distance between the navigation bar and the content below -->
+    <br><br><br><br><br><br><br><br>
+
+    <!-- About Us Section -->
+    <section class="about-section">
+        <div class="about-container">
+            <!-- Section Title -->
+            <h1 class="about-title">Who We Are</h1>
+
+            <!-- Subheading for the section -->
+            <p class="about-subheading">Crafting Excellence, Building Trust</p>
+
+            <!-- Content area with an image and descriptive text -->
+            <div class="about-content">
+                <!-- Container for the image -->
+                <div class="about-image-container">
+                    <!-- Image showcasing the team or business; alt text for accessibility -->
+                    <img src="image/about.webp" alt="Our Team" class="about-image">
+                </div>
+
+                <!-- Text content describing the company -->
+                <div class="about-text-container">
+                    <!-- First paragraph describing the store's focus -->
+                    <p class="about-description">
+                        At <span class="about-highlight">Vintage Store</span>, we specialize in preserving the legacy of classic automobiles. As a premier vintage car seller, we bring you a curated collection of rare, endangered, and iconic cars that embody timeless elegance and unmatched craftsmanship.
+                    </p>
+                    <!-- Second paragraph about the store’s passion and services -->
+                    <p class="about-description">
+                        Our passion lies in restoring and offering vintage cars equipped with fresh, top-quality machines, ensuring they perform as beautifully as they look. From collectors to enthusiasts, we take pride in delivering the finest and most sought-after classic cars ever found, making your journey into the golden era of automobiles unforgettable.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript to handle the opening and closing of the mobile sidebar -->
+    <script>
+        // Select the navigation links and menu open/close icons by their IDs
+        const navLinks = document.getElementById("nav-links");
+        const menuOpen = document.getElementById("menu-open");
+        const menuClose = document.getElementById("menu-close");
+
+        // Event listener for opening the sidebar when the menu icon is clicked
+        menuOpen.addEventListener("click", () => {
+            navLinks.classList.add("mobile"); // Adds a 'mobile' class to display the sidebar menu
+        });
+
+        // Event listener for closing the sidebar when the close icon is clicked
+        menuClose.addEventListener("click", () => {
+            navLinks.classList.remove("mobile"); // Removes the 'mobile' class to hide the sidebar
+        });
+    </script>
+
+</body>
+</html>

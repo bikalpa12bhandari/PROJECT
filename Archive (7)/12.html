@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta information and character encoding for the document -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Title of the web page displayed in the browser tab -->
+    <title>Lamborghini Miura</title>
+</head>
+<body>
+
+    <!-- Navigation bar section -->
+    <nav>
+        <div class="navbar">
+            <!-- Icon for opening the menu (mobile view) -->
+            <i class='bx bx-menu' id="menu-open"></i>
+
+            <!-- Logo with link to the homepage -->
+            <div class="logo"><a href="main.html">Vintage Store</a></div>
+
+            <!-- The sidebar and navigation links -->
+            <div class="nav-links" id="nav-links">
+                <!-- Sidebar logo and close button -->
+                <div class="sidebar-logo">
+                    <span class="logo-name">Vintage Store</span>
+                    <i class='bx bx-x' id="menu-close"></i>
+                </div>
+
+                <!-- List of navigation links -->
+                <ul class="links">
+                    <li><a href="main.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="shop.html">SHOP</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Spacing elements for layout -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- Header section with the title of the page -->
+    <header>
+        <h1 class="classic-gallery-title">Lamborghini Miura</h1>
+    </header>
+
+    <!-- Main content section -->
+    <main>
+        <!-- Gallery of images showcasing the Lamborghini Miura -->
+        <section class="classic-gallery-container">
+            <img src="image/121.jpg" alt="Classic Car 1" class="classic-gallery-image classic-image-one">
+            <img src="image/1212.jpg" alt="Classic Car 2" class="classic-gallery-image classic-image-two">
+            <img src="image/12121.jpg" alt="Classic Car 3" class="classic-gallery-image classic-image-three">
+        </section>
+
+        <!-- Description section for the Lamborghini Miura -->
+        <section class="classic-description-section">
+            <p class="classic-description-text">
+                The Lamborghini Miura is a sports car produced by Italian automaker Lamborghini between 1966 and 1973. The car was the first 
+                automobile with a rear mid-engined two-seat layout, although the concept was first seen in a production road car with René Bonnet's 
+                Matra Djet, introduced in 1964. This layout has since become the standard for high-performance sports cars. When released, it was the 
+                fastest production road car.
+
+                The Miura was originally conceived by Lamborghini's engineering team, which designed the car in its spare time against the wishes of 
+                company founder Ferruccio Lamborghini, who preferred powerful yet sedate grand touring cars over the race car-derived machines produced 
+                by local rival Ferrari. However, when the development mule was revealed to Ferruccio, he gave approval for its development to continue.
+
+                The Miura's rolling chassis was presented at the 1965 Turin Auto Show, and the prototype P400 debuted at the 1966 Geneva Motor Show. 
+                It received stellar receptions from showgoers and the motoring press alike, each impressed by Marcello Gandini's sleek styling and the 
+                car's revolutionary mid-engine design.
+
+                Lamborghini's flagship, the Miura received periodic updates and remained in production until 1973. A year later the Countach entered the 
+                company's lineup, amid tumultuous financial times for the company.
+            </p>
+        </section>
+    </main>
+
+    <!-- Footer section with store information -->
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Store name in the footer -->
+            <h1>The Vintage Store</h1>
+        </div>
+    </footer>
+
+    <!-- JavaScript for opening and closing the sidebar menu -->
+    <script>
+        // Get elements for sidebar, menu open and close buttons
+        const navLinks = document.getElementById("nav-links");
+        const menuOpen = document.getElementById("menu-open");
+        const menuClose = document.getElementById("menu-close");
+
+        // Event listener to open the sidebar menu when the menu icon is clicked
+        menuOpen.addEventListener("click", () => {
+            navLinks.classList.add("mobile"); // Add "mobile" class to show the sidebar
+        });
+
+        // Event listener to close the sidebar menu when the close icon is clicked
+        menuClose.addEventListener("click", () => {
+            navLinks.classList.remove("mobile"); // Remove "mobile" class to hide the sidebar
+        });
+    </script>
+</body>
+</html>

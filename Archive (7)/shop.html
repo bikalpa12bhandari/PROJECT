@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vintage Store</title>
+  <!-- Link to external CSS for styling -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="navbar">
+      <!-- Menu icon to open sidebar -->
+      <i class='bx bx-menu' id="menu-open"></i>
+      <!-- Logo linking to the main page -->
+      <div class="logo"><a href="main.html">Vintage Store</a></div>
+      <!-- Sidebar menu links -->
+      <div class="nav-links" id="nav-links">
+        <!-- Sidebar logo and close icon -->
+        <div class="sidebar-logo">
+          <span class="logo-name">Vintage Store</span>
+          <i class='bx bx-x' id="menu-close"></i>
+        </div>
+        <!-- Navigation links -->
+        <ul class="links">
+          <li><a href="main.html">HOME</a></li>
+          <li><a href="about.html">ABOUT US</a></li>
+          <li><a href="contact.html">CONTACT US</a></li>
+          <li><a href="shop.html">SHOP</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <br><br><br><br>
+  
+  <!-- Main Content Section -->
+  <div class="container1">
+    <!-- Product Cards: Repeated for each product -->
+
+    <!-- First Product Card -->
+    <div class="card">
+      <img src="image/1.webp" alt="Product Image">
+      <h3>Ferrari 250 GTO</h3>
+      <p>$50,000,000</p>
+      <button class="buy-now">Buy Now</button>
+    </div>
+
+    <!-- Second Product Card -->
+    <div class="card">
+      <img src="image/2.webp" alt="Product Image">
+      <h3>Shelby Cobra</h3>
+      <p>$2,500,000</p>
+      <button class="buy-now">Buy Now</button>
+    </div>
+
+    <!-- Third Product Card -->
+    <div class="card">
+      <img src="image/3.webp" alt="Product Image">
+      <h3>Mercedes-Benz 300SL Gullwing</h3>
+      <p>$2,000,000</p>
+      <button class="buy-now">Buy Now</button>
+    </div>
+
+    <!-- Fourth Product Card -->
+    <div class="card">
+      <img src="image/4.webp" alt="Product Image">
+      <h3>Jaguar E-Type</h3>
+      <p>$250,000</p>
+      <button class="buy-now">Buy Now</button>
+    </div>
+
+    <!-- Fifth Product Card -->
+    <div class="card">
+      <img src="image/5.webp" alt="Product Image">
+      <h3>Plymouth Hemi ‘Cuda</h3>
+      <p>$3,000,000</p>
+      <button class="buy-now">Buy Now</button>
+    </div>
+
+    <!-- Sixth Product Card -->
+    <div class="card">
+      <img src="image/6.webp" alt="Product Image">
+      <h3>Porsche 911 Turbo</h3>
+      <p>$300,000</p>
+      <button class="buy-now">Buy Now</button>
+    </div>
+
+    <!-- Seventh Product Card -->
+    <div class="card">
+      <img src="image/7.webp" alt="Product Image">
+      <h3>Ford Mustang</h3>
+      <p>$100,000</p>
+      <button class="buy-now">Buy Now</button>
+    </div>
+
+    <!-- Eighth Product Card -->
+    <div class="card">
+      <img src="image/8.webp" alt="Product Image">
+      <h3>Aston Martin DB5</h3>
+      <p>$2,500,000</p>
+      <button class="buy-now">Buy Now</button>
+    </div>
+
+    <!-- Ninth Product Card -->
+    <div class="card">
+      <img src="image/9.webp" alt="Product Image">
+      <h3>Lincoln Continental</h3>
+      <p>$75,000</p>
+      <button class="buy-now">Buy Now</button>
+    </div>
+
+    <!-- Tenth Product Card -->
+    <div class="card">
+      <img src="image/10.webp" alt="Product Image">
+      <h3>1959 Cadillac</h3>
+      <p>$100,000</p>
+      <button class="buy-now">Buy Now</button>
+    </div>
+
+    <!-- Eleventh Product Card -->
+    <div class="card">
+      <img src="image/11.jpg" alt="Product Image">
+      <h3>1953 Chevrolet Corvette</h3>
+      <p>$250,000</p>
+      <button class="buy-now">Buy Now</button>
+    </div>
+
+    <!-- Twelfth Product Card -->
+    <div class="card">
+      <img src="image/12.webp" alt="Product Image">
+      <h3>Lamborghini Miura</h3>
+      <p>$2,500,000</p>
+      <button class="buy-now">Buy Now</button>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-content">
+      <h1>The Vintage Store</h1>
+    </div>
+  </footer>
+
+  <!-- JavaScript for Sidebar functionality -->
+  <script>
+    // Open and Close Sidebar functionality
+    const navLinks = document.getElementById("nav-links");
+    const menuOpen = document.getElementById("menu-open");
+    const menuClose = document.getElementById("menu-close");
+
+    // When menu icon is clicked, show the sidebar
+    menuOpen.addEventListener("click", () => {
+      navLinks.classList.add("mobile");
+    });
+
+    // When close icon is clicked, hide the sidebar
+    menuClose.addEventListener("click", () => {
+      navLinks.classList.remove("mobile");
+    });
+  </script>
+</body>
+</html>

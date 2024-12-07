@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tag for character encoding (UTF-8) and viewport settings for responsiveness on different devices -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to the external CSS file to style the page -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Title of the webpage that appears in the browser tab -->
+    <title>Jaguar E-Type</title>
+</head>
+<body>
+
+    <!-- Navigation bar for the website -->
+    <nav>
+        <div class="navbar">
+            <!-- Icon for opening the sidebar menu on smaller screens -->
+            <i class='bx bx-menu' id="menu-open"></i>
+
+            <!-- Logo of the store, which links to the homepage -->
+            <div class="logo"><a href="main.html">Vintage Store</a></div>
+
+            <!-- Sidebar menu containing navigation links for the site -->
+            <div class="nav-links" id="nav-links">
+                <!-- Sidebar logo and close button -->
+                <div class="sidebar-logo">
+                    <span class="logo-name">Vintage Store</span>
+                    <i class='bx bx-x' id="menu-close"></i>
+                </div>
+
+                <!-- List of navigation links in the sidebar -->
+                <ul class="links">
+                    <li><a href="main.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="shop.html">SHOP</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Spacer elements to create vertical spacing between sections -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- Header section displaying the title of the car featured on the page -->
+    <header>
+        <h1 class="classic-gallery-title">Jaguar E-Type</h1>
+    </header>
+
+    <!-- Main content section of the page -->
+    <main>
+        <!-- Gallery section with images of the Jaguar E-Type -->
+        <section class="classic-gallery-container">
+            <!-- Images of the car with alt text for better accessibility -->
+            <img src="image/44.jpg" alt="Classic Car 1" class="classic-gallery-image classic-image-one">
+            <img src="image/444.jpg" alt="Classic Car 2" class="classic-gallery-image classic-image-two">
+            <img src="image/4444.jpg" alt="Classic Car 3" class="classic-gallery-image classic-image-three">
+        </section>
+
+        <!-- Description section with detailed information about the Jaguar E-Type -->
+        <section class="classic-description-section">
+            <p class="classic-description-text">
+                <!-- Detailed description of the Jaguar E-Type including its history, performance, and features -->
+                The E-Type was introduced as a rear-wheel drive grand tourer in two-seater coupé form (FHC or Fixed Head Coupé) and as a two-seater convertible (OTS or Open Two Seater). A "2+2" four-seater version of the coupé, with a lengthened wheelbase, was released in 1966.
+
+                Later model updates of the E-Type were officially designated "Series 2" and "Series 3", and over time the earlier cars have come to be referred to as "Series 1." As with other partly handmade cars of the time, changes were incremental and ongoing, which has led to confusion over exactly what a Series 1 car is. This is of more than academic interest, as Series 1 E-Types—and particularly Series 1 roadsters—often have values in excess of Series 2 and 3 models.
+
+                The Series 1 cars essentially fall into two categories: Those made between 1961 and 1964, which had 3.8-litre engines and (on all but the very last cars) partial synchromesh transmissions; and those made between 1965 and 1967, which increased engine size and torque by around 10% to 4.2 litres, and also provided new reclining seats, an alternator in place of the dynamo, an electrical system switched to negative earth, a more reliable brake servo, and other modern amenities. Styling was unchanged.
+
+                The 4.2-litre Type 1 E-Type generally became the most valuable form of the car. However, as of 2014, the most expensive regular production Jaguar E-Types sold at auction included a 4.2-litre Series 1 roadster, with matching numbers, original paint and interior, under 80,000 miles since new, and a history of being in the original buyer's family for 45 years, for $467,000 in 2013, and a 3.8-litre 1961 "flat floor" Series 1, for $528,000 in 2014. Special run racing lightweights go for much more.
+
+                The Jaguar E-Type, particularly the Series 1, has become an icon in the world of classic cars, with rare sub-types such as the "Lightweight" and "Low Drag Coupé" editions, known for their racing pedigree. The car's exceptional design was recognized in 1996 when the New York City Museum of Modern Art included a blue roadster in its permanent design collection.
+            </p>
+        </section>
+    </main>
+
+    <!-- Footer section of the page -->
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Footer heading with store name -->
+            <h1>The Vintage Store</h1>
+        </div>
+    </footer>
+
+    <!-- JavaScript to handle the opening and closing of the mobile sidebar menu -->
+    <script>
+        // Select elements for the navigation links and menu buttons (open and close)
+        const navLinks = document.getElementById("nav-links");
+        const menuOpen = document.getElementById("menu-open");
+        const menuClose = document.getElementById("menu-close");
+
+        // Event listener for opening the sidebar menu when the hamburger menu icon is clicked
+        menuOpen.addEventListener("click", () => {
+            navLinks.classList.add("mobile"); // Adds 'mobile' class to show the sidebar menu
+        });
+
+        // Event listener for closing the sidebar menu when the close button is clicked
+        menuClose.addEventListener("click", () => {
+            navLinks.classList.remove("mobile"); // Removes 'mobile' class to hide the sidebar menu
+        });
+    </script>
+
+</body>
+</html>

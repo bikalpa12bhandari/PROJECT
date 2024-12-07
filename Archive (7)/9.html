@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta information for character encoding and responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to external CSS for styling -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Title displayed on the browser tab -->
+    <title>Lincoln Continental</title>
+</head>
+<body>
+
+    <!-- Navigation bar -->
+    <nav>
+        <div class="navbar">
+            <!-- Icon to open the menu (for mobile view) -->
+            <i class='bx bx-menu' id="menu-open"></i>
+
+            <!-- Logo with a link to the homepage -->
+            <div class="logo"><a href="main.html">Vintage Store</a></div>
+
+            <!-- Sidebar and navigation links -->
+            <div class="nav-links" id="nav-links">
+                <!-- Sidebar logo and close button -->
+                <div class="sidebar-logo">
+                    <span class="logo-name">Vintage Store</span>
+                    <i class='bx bx-x' id="menu-close"></i>
+                </div>
+
+                <!-- List of navigation links -->
+                <ul class="links">
+                    <li><a href="main.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="shop.html">SHOP</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Spacer elements for layout adjustments -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- Header section with the page title -->
+    <header>
+        <h1 class="classic-gallery-title">Lincoln Continental</h1>
+    </header>
+
+    <!-- Main content area -->
+    <main>
+        <!-- Gallery container displaying images of the Lincoln Continental -->
+        <section class="classic-gallery-container">
+            <img src="image/999.jpg" alt="Classic Car 1" class="classic-gallery-image classic-image-one">
+            <img src="image/99.jpg" alt="Classic Car 2" class="classic-gallery-image classic-image-two">
+            <img src="image/9999.jpg" alt="Classic Car 3" class="classic-gallery-image classic-image-three">
+        </section>
+
+        <!-- Description section for the Lincoln Continental -->
+        <section class="classic-description-section">
+            <p class="classic-description-text">
+                The Lincoln Continental began life as a personal vehicle for Ford Motor Company President Edsel Ford. In 1938, Ford commissioned 
+                a one-off design he wanted ready for his March 1939 vacation from company Chief Stylist Eugene T. "Bob" Gregorie. Using the blueprints 
+                of the streamlined Lincoln-Zephyr as a starting point, Gregorie sketched a design for a convertible with a redesigned body; allegedly, 
+                the initial sketch for the design was completed in an hour.
+
+                Ford wanted to revive the popularity of the 1929–1932 Lincoln Victoria coupe and convertible but with a more modern approach, reflecting 
+                European styling influences for the Continental.
+
+                By design, the Edsel Ford prototype was essentially a channeled and sectioned Lincoln-Zephyr convertible; although the vehicle wore 
+                a conventional windshield profile, the prototype sat nearly 7 inches lower than a standard Lincoln. Along with the massive decrease in 
+                height, the running boards were deleted entirely. In contrast to the Zephyr (and in a massive change from the K-Series Lincoln), the 
+                hood sat nearly level with the fenders taking advantage of the fact that the engine type and configuration did not need the clearance 
+                afforded by the height of the standard Lincoln hood line.
+
+                To focus on the styling of the car, the chrome trim on the car was largely restricted to the grille; the prototype differed from the 
+                eventual production version in that it utilized a somewhat less angular roof line. As with the Lincoln-Zephyr, the prototype utilized 
+                a 267 cubic-inch V12 engine, transverse leaf springs front and rear as well as hydraulic drum brakes.
+
+                The prototype designed by Gregorie was produced on time, making the deadline to be delivered to Edsel Ford in Florida. Interest from 
+                well-off friends was high; Edsel sent a telegram back to Michigan that he could sell a thousand of them. In reference to its European-inspired 
+                design, the Lincoln-based prototype received its name: Continental.
+
+                Immediately, production commenced on the Lincoln Continental, with the majority of production being "Cabriolet" convertibles and a rare number 
+                of coupes. These were extensively hand-built; the two dozen 1939 models and 400 1940-built examples were built with hand-hammered body panels; 
+                dies for machine-pressing were not constructed until 1941. The limited number of 1939 models produced are commonly referred to as '1940 Continentals'.
+            </p>
+        </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Store name displayed in the footer -->
+            <h1>The Vintage Store</h1>
+        </div>
+    </footer>
+
+    <!-- JavaScript for opening and closing the sidebar menu -->
+    <script>
+        // Get elements for the sidebar, menu open and close buttons
+        const navLinks = document.getElementById("nav-links");
+        const menuOpen = document.getElementById("menu-open");
+        const menuClose = document.getElementById("menu-close");
+
+        // Event listener to open the sidebar when the menu icon is clicked
+        menuOpen.addEventListener("click", () => {
+            navLinks.classList.add("mobile"); // Add the "mobile" class to show the sidebar
+        });
+
+        // Event listener to close the sidebar when the close icon is clicked
+        menuClose.addEventListener("click", () => {
+            navLinks.classList.remove("mobile"); // Remove the "mobile" class to hide the sidebar
+        });
+    </script>
+</body>
+</html>

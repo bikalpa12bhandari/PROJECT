@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta information and character encoding for the document -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Title of the web page displayed in the browser tab -->
+    <title>1959 Cadillac</title>
+</head>
+<body>
+
+    <!-- Navigation bar section -->
+    <nav>
+        <div class="navbar">
+            <!-- Icon for opening the menu (mobile view) -->
+            <i class='bx bx-menu' id="menu-open"></i>
+
+            <!-- Logo with link to the homepage -->
+            <div class="logo"><a href="main.html">Vintage Store</a></div>
+
+            <!-- The sidebar and navigation links -->
+            <div class="nav-links" id="nav-links">
+                <!-- Sidebar logo and close button -->
+                <div class="sidebar-logo">
+                    <span class="logo-name">Vintage Store</span>
+                    <i class='bx bx-x' id="menu-close"></i>
+                </div>
+
+                <!-- List of navigation links -->
+                <ul class="links">
+                    <li><a href="main.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="shop.html">SHOP</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Spacing elements for layout -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- Header section with the title of the page -->
+    <header>
+        <h1 class="classic-gallery-title">1959 Cadillac</h1>
+    </header>
+
+    <!-- Main content section -->
+    <main>
+        <!-- Gallery of images showcasing the 1959 Cadillac -->
+        <section class="classic-gallery-container">
+            <img src="image/100.jpg" alt="Classic Car 1" class="classic-gallery-image classic-image-one">
+            <img src="image/1000.jpg" alt="Classic Car 2" class="classic-gallery-image classic-image-two">
+            <img src="image/10000.jpg" alt="Classic Car 3" class="classic-gallery-image classic-image-three">
+        </section>
+
+        <!-- Description section for the 1959 Cadillac -->
+        <section class="classic-description-section">
+            <p class="classic-description-text">
+                The Cadillac Series 62 Eldorado joined the Oldsmobile 98 Fiesta, and Buick Roadmaster Skylark as top-of-the-line, 
+                limited-production specialty convertibles introduced in 1953 by General Motors to promote its design leadership. 
+                A special-bodied, low-production convertible (532 units in total), it was the production version of the 1952 El Dorado 
+                "Golden Anniversary" concept car. Along with borrowing bumper bullets from the 1951 GM Le Sabre show car, it featured 
+                a full assortment of deluxe accessories and introduced the wraparound windshield and a cut-down beltline to Cadillac standard production.
+
+                The expansive frontal glass and distinctive dip in the sheet metal at the bottom of the side windows (featured on one 
+                or both of GM's other 1953 specialty convertibles) were especially beloved by General Motors' styling chief Harley Earl 
+                and subsequently widely copied by other marques. Available in four unique colors; Aztec Red, Alpine White, Azure Blue, 
+                and Artisan Ochre. Convertible tops were available in either black or white Orlon. AC was an option at US$620 ($7,061 in 2023 dollars), 
+                as were wire wheels for US$325 ($3,701 in 2023 dollars). The car carried no special badging other than a gold-colored "Eldorado" 
+                nameplate in the center of the dash. A hard tonneau cover, flush with the rear deck, hid the convertible top when stored.
+            </p>
+        </section>
+    </main>
+
+    <!-- Footer section with store information -->
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Store name in the footer -->
+            <h1>The Vintage Store</h1>
+        </div>
+    </footer>
+
+    <!-- JavaScript for opening and closing the sidebar menu -->
+    <script>
+        // Get elements for sidebar, menu open and close buttons
+        const navLinks = document.getElementById("nav-links");
+        const menuOpen = document.getElementById("menu-open");
+        const menuClose = document.getElementById("menu-close");
+
+        // Event listener to open the sidebar menu when the menu icon is clicked
+        menuOpen.addEventListener("click", () => {
+            navLinks.classList.add("mobile"); // Add "mobile" class to show the sidebar
+        });
+
+        // Event listener to close the sidebar menu when the close icon is clicked
+        menuClose.addEventListener("click", () => {
+            navLinks.classList.remove("mobile"); // Remove "mobile" class to hide the sidebar
+        });
+    </script>
+</body>
+</html>
